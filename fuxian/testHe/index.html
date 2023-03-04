@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+		<!-- 注意这里web3js的库的位置，我是将node_modules放在当前文件夹下 <script src="./node_modules/web3/dist/web3.min.js"></script>-->
+    <script src="../../node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Info Contract</h1>
+
+        <h2 id="info"></h2>
+
+        <label for="name" class="col-lg-2 control-label">Name</label>
+        <input id="name" type="text">
+
+        <label for="name" class="col-lg-2 control-label">Age</label>
+        <input id="age" type="text">
+
+        <button id="button">Update Info</button>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script> 
+            //定义web3标签
+            if (typeof web3 !== 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+            } else {
+            // 连接端口如果不一样请自行更改
+                web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
+            }
+            
+            var InfoContractABI = [
+                {
+                "inputs": [],
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+                },
+                {
+                "inputs": [],
+                "name": "age",
+                "outputs": [
+                    {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+                },
+                {
+                "inputs": [],
+                "name": "fName",
+                "outputs": [
+                    {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+                },
+                {
+                "inputs": [
+                    {
+                    "internalType": "string",
+                    "name": "_fName",
+                    "type": "string"
+                    },
+                    {
+                    "internalType": "uint256",
+                    "name": "_age",
+                    "type": "uint256"
+                    }
+                ],
+                "name": "setInfo",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+                },
+                {
+                "inputs": [],
+                "name": "getInfo",
+                "outputs": [
+                    {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                    },
+                    {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+                }
+            ]
+            var InfoContractaddress = '0xA9F4047e16D8740764eC1C27E7Fd6FFEcBA2c09E';
+            var InfoContractaccount = '0xDAF28392c3D8d7297D2d208a48B4E1F981434De8';
+            var info = new web3.eth.Contract(InfoContractABI,InfoContractaddress);
+            info.methods.getInfo().call(null,function(error, result){ //定义异步get请求
+                if(!error)
+                    {
+                    $("#info").html(result[0]+' ('+result[1]+' years old)');
+                    console.log(result);
+                    }
+                else
+                    console.error(error);
+            });
+            $("#button").click(function() {
+                info.methods.setInfo($("#name").val(), $("#age").val()).send({from: InfoContractaccount}).on('transactionHash', function(hash){
+                console.log("hash:", hash);
+                info.methods.getInfo().call(null,function(error, result){
+                    $("#info").html(result[0]+' ('+result[1]+' years old)');
+                    console.log(result);
+                });
+                });
+            });
+
+
+		</script>
+		
+</body>
+</html>
