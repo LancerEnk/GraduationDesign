@@ -1,0 +1,20 @@
+=============== Mar 5, 2023 (CST) ===============
+15:57:37.002648 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:57:37.017037 db@open opening
+15:57:37.018146 version@stat F·[] S·0B[] Sc·[]
+15:57:37.024368 db@janitor F·2 G·0
+15:57:37.024392 db@open done T·7.299893ms
+15:57:37.026964 db@close closing
+15:57:37.026999 db@close done T·34.109µs
+=============== Mar 5, 2023 (CST) ===============
+15:57:46.360200 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:57:46.360340 version@stat F·[] S·0B[] Sc·[]
+15:57:46.360354 db@open opening
+15:57:46.360545 journal@recovery F·1
+15:57:46.365855 journal@recovery recovering @1
+15:57:46.373541 memdb@flush created L0@2 N·14 S·893B "H\xb8(..Rp\xfc,v7":"\xe66\xfd..tW),v2"
+15:57:46.379350 version@stat F·[1] S·893B[893B] Sc·[0.25]
+15:57:46.398827 db@janitor F·3 G·0
+15:57:46.398891 db@open done T·38.528222ms
+16:08:48.663813 db@close closing
+16:08:48.665182 db@close done T·1.363243ms
