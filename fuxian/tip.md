@@ -11,3 +11,7 @@
 
 # the Third experiment
 * successfully completed!
+
+# the Fourth experiment
+* /test02 is used in vsCode (compile TestContract.sol to get TestContract.json)
+* successfully completed!
