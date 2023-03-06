@@ -1,3 +1,0 @@
-admin.nodeInfo.enode
-miner.start(1)
-miner.stop()
