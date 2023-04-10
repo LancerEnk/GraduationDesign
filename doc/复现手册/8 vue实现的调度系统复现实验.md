@@ -158,7 +158,7 @@ eth.accounts
 
 按照 [调度系统实验](https://github.com/LancerEnk/GraduationDesign/blob/main/doc/%E5%A4%8D%E7%8E%B0%E6%89%8B%E5%86%8C/7%20%E8%B0%83%E5%BA%A6%E7%B3%BB%E7%BB%9F%E5%A4%8D%E7%8E%B0%E5%AE%9E%E9%AA%8C.md) 中的 `03 部署合约`、`04 上传地图` 这两个章节完成合约部署和地图上传。
 
-[09 使用Remix-ide编译合约](./%E5%A4%8D%E7%8E%B0%E6%89%8B%E5%86%8C_CJZandWQL/9%20%E4%BD%BF%E7%94%A8Remix-ide%E7%BC%96%E8%AF%91%E5%90%88%E7%BA%A6.md)
+[09 使用Remix-ide编译合约](9%20%E4%BD%BF%E7%94%A8Remix-ide%E7%BC%96%E8%AF%91%E5%90%88%E7%BA%A6.md)
 
 # 04 运行vue项目
 
