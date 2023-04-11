@@ -9,7 +9,10 @@
 # 01 使用Remix-ide编译合约
 
 在 `Remix-ide` 中选取合约版本为 `0.5.17+commit.d19bba13`。
+
 然后在 `contract` 文件夹中新建 StoreMap.sol、StoreTraffic.sol、credit.sol 三个文件。
+
+合约所在的地址：https://github.com/LancerEnk/GraduationDesign/tree/main/fuxian/test02/contracts
 
 依次编译这三个合约，会得到三个对应的json文件。
 
