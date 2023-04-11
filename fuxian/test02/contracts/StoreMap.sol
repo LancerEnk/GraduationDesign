@@ -1,4 +1,5 @@
 pragma solidity ^0.5.16;
+//pragma solidity ^0.8.19;
 
 contract StoreMap{
 	// 存储地图信息
