@@ -1,0 +1,103 @@
+the position of vehicle and passenger should not be too far,
+otherelse the passenger will alert "out of gas"
+
+------------------------------------------------------------------------------------------------
+(1)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4er96wttk" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4ereg0pf4",
+    passengerStart: "wx4ereg0pf4",
+    passengerEnd: "wx4ers9kb7j",
+}
+------------------------------------------------------------------------------------------------
+(2)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4erj7077w" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4erecq444",
+    passengerStart: "wx4erecq444",
+    passengerEnd: "wx4ert45tn6",
+}
+------------------------------------------------------------------------------------------------
+(3)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4erxhyu9y" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4ertcu9fm",
+    passengerStart: "wx4ertcu9fm",
+    passengerEnd: "wx4erw3bdpu",
+}
+------------------------------------------------------------------------------------------------
+(4)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4errjutqz" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4ertcwmzy",
+    passengerStart: "wx4ertcwmzy",
+    passengerEnd: "wx4erwcd0t6",
+}
+------------------------------------------------------------------------------------------------
+(5)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4erbwfznn" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4erbqcr6m",
+    passengerStart: "wx4erbqcr6m",
+    passengerEnd: "wx4ers9kb7j",
+}
+
+this "wx4ers9kb7j" is the same as (1)
+
+------------------------------------------------------------------------------------------------
+(6)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4erx1vb8r" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4er9fm1g8",
+    passengerStart: "wx4er9fm1g8",
+    passengerEnd: "wx4er87qgj6",
+}
+------------------------------------------------------------------------------------------------
+(7)
+
+{"vehicleId": "0xb7a500a91521c642bd7e6a8a9ec3d9d933411101", "vehiclePosition": "wx4erx3kums" }
+
+{
+    passengerId: "0xabda6c51a9cd9f724377fdbcc27e1d5d98a33072",
+    passengerPosition: "wx4ergtxjdr",
+    passengerStart: "wx4ergtxjdr",
+    passengerEnd: "wx4g2072x6n",
+}
+------------------------------------------------------------------------------------------------
+(8)
+
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4er96y8em" }
+
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4ervjmy72",
+    passengerStart: "wx4ervjmy72",
+    passengerEnd: "wx4ergts76u",
+}
+------------------------------------------------------------------------------------------------
+(9)
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4er7eejrr" }
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4erewgknf",
+    passengerStart: "wx4erewgknf",
+    passengerEnd: "wx4ergjz079",
+}

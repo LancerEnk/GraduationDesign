@@ -1,0 +1,48 @@
+(1) passenger: out of gas
+
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4ers17g8y" }
+
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4er8epynm",
+    passengerStart: "wx4er8epynm",
+    passengerEnd: "wx4ersf4kjv",
+}
+
+------------------------------------------------------------------------------------------------
+
+(2) vehicle: timeout
+
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4erbnymp5" }
+
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4ert4zrxt",
+    passengerStart: "wx4ert4zrxt",
+    passengerEnd: "wx4er5dvpgn",
+}
+
+------------------------------------------------------------------------------------------------
+
+(3) passenger: out of gas
+
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4er5et0yy" }
+
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4ert4zrxt",
+    passengerStart: "wx4ert4zrxt",
+    passengerEnd: "wx4er5dvpgn",
+}
+------------------------------------------------------------------------------------------------
+
+(4) vehicle: timeout
+
+{"vehicleId": "0x464d565f2e5b04981231738b47f06798ab6e1ffa", "vehiclePosition": "wx4er96y8em" }
+
+{
+    passengerId: "0x6d579e67e7a4658b611895c76cefcac905cd3b1d",
+    passengerPosition: "wx4erewgknf",
+    passengerStart: "wx4erewgknf",
+    passengerEnd: "wx4ergjz079",
+}
