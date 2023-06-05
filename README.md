@@ -1,5 +1,7 @@
 # GraduationDesign
 
+> 笔者的毕设工作主要在Github上完成更新，Gitee只做辅助记录工作
+
 在Github中，笔者的毕设工作一共对应两个仓库，分为`毕设过程性仓库（长期维护）`和`毕设代码仓库（短期维护）`。
 
 [毕设过程性Github仓库（长期维护）](https://github.com/LancerEnk/GraduationDesign)，即本仓库，本仓库从1月份维护至毕设结束，存放以下内容：
