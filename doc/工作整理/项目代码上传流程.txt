@@ -1,0 +1,66 @@
+----------------------------------------
+参考：https://blog.csdn.net/weixin_46508271/article/details/121202829
+
+我在Gitee里通过本地仓库，上传所有源代码，再用Github导入我上传完毕的Gitee仓库，实现在虚拟机中绕过VPN传输项目代码到Github的效果。
+
+----------------------------------------
+链接本地仓库和远端Gitee仓库
+
+git config --global user.name "用户名"
+git config --global user.email "邮箱地址"
+git init
+git remote add origin Gitee仓库中给出的https地址
+
+----------------------------------------
+添加taxiSystem_202306_msj
+
+git add .
+git commit -m 'add taxiSystem_202306_msj'
+git pull origin master --allow-unrelated-historie
+git push origin master
+
+由于是第一次提交，所以会弹弹窗，输入Gitee账号和密码。
+笔者在提交仓库中所有文件时，从未关过 Git Bash，因此后续不需再次输入Gitee账号密码。
+
+----------------------------------------
+添加lonlat-to-geohash-addedDATA-msj
+
+git add lonlat-to-geohash-addedDATA-msj
+git commit -m 'add lonlat-to-geohash-addedDATA-msj'
+git pull origin master
+git push origin master
+
+----------------------------------------
+添加treeblockchain_msj
+
+git add treeblockchain_msj
+git commit -m 'add treeblockchain_msj'
+git pull origin master
+git push origin master
+
+----------------------------------------
+添加wqlCode-msj.zip
+
+git add wqlCode-msj.zip
+git commit -m 'add wqlCode-msj.zip'
+git pull origin master
+git push origin master
+
+原文件太大了，报错：
+remote: error: File: 625c8c8c6355c849ad5d1764221c447775d40fc1 218.93 MB, exceeds
+ 100.00 MB.
+...
+remote: Please remove the file from history and try again. (https://gitee.com/help/articles/4232)
+
+所以从commit的提交记录里删掉该超大文件
+git filter-branch --tree-filter 'rm -f wqlCode-msj.zip' HEAD
+报Ref 'refs/heads/master' was rewritten
+删除成功
+
+----------------------------------------
+添加FinalThesis_202306_msj
+
+git add FinalThesis_202306_msj
+git commit -m 'add FinalThesis_202306_msj'
+git pull origin master
+git push origin master
